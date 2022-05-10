@@ -1,14 +1,16 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 func main() {
-	var a,b int
-    var x int
- 
-    fmt.Scanf("%d", &a)
-    fmt.Scanf("%d", &b)
-    x = a + b
-     
-    fmt.Printf("X = %d\n", x)
+	var raio int64
+	pi := 3.14159
+	
+	fmt.Scanf("%d",&raio)
+	volume := ((4/3.0)*pi) *(math.Pow(float64(raio),3))
+
+	fmt.Printf("VOLUME = %.3f\n",volume)
 }
