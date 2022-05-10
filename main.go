@@ -6,20 +6,12 @@ import (
 )
 
 func main() {
-	var a, b, c float64
-	pi := 3.14159
-	fmt.Scanf("%f %f %f", &a, &b, &c)
-	triangulo := (a * c) / 2
-	circulo := pi * (math.Pow(c, 2))
-	trapezio := ((a + b) * c) / 2
-	quadrado := math.Pow(b, 2)
-	retangulo := (a*b)
+	var a, b, c int64
 
-	fmt.Printf("TRIANGULO: %.3f\n", triangulo)
-	fmt.Printf("CIRCULO: %.3f\n", circulo)
-	fmt.Printf("TRAPEZIO: %.3f\n", trapezio)
-	fmt.Printf("QUADRADO: %.3f\n", quadrado)
-	fmt.Printf("RETANGULO: %.3f\n", retangulo)
+	fmt.Scanf("%d %d %d", &a, &b, &c)
+	maiorAB := ((a + b) + int64(math.Abs(float64(a-b)))) / 2
+	maiorABC := (maiorAB + c + int64(math.Abs(float64(maiorAB-c)))) / 2
 
+	fmt.Printf("%d eh o maior\n", maiorABC)
 
 }
