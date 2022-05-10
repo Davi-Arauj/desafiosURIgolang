@@ -3,14 +3,17 @@ package main
 import "fmt"
 
 func main() {
-	var a,b,c,d int64
+	
+    var a,b,c float64
 
-	fmt.Scanf("%d", &a)
-	fmt.Scanf("%d", &b)
-	fmt.Scanf("%d", &c)
-	fmt.Scanf("%d", &d)
-
-	DIFERENCA := (a * b - c * d)
+	fmt.Scanf("%f", &a)
+	fmt.Scanf("%f", &b)
+	fmt.Scanf("%f", &c)
+	var notaA = a*2.0
+	var notaB = b*3.0
+	var notaC = c*5.0 
  
-	fmt.Printf("DIFERENCA = %d\n", DIFERENCA)
+	media := (notaA+notaB+notaC)/10
+
+	fmt.Printf("MEDIA = %.1f\n", media)
 }
