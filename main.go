@@ -4,12 +4,12 @@ import "fmt"
 
 func main() {
 	
-	var a,b int
+    var a,b int
 
 	fmt.Scanf("%d", &a)
 	fmt.Scanf("%d", &b)
 
-	var PROD =  a*b
+	var SOMA =  a+b
 
-	fmt.Printf("PROD = %d\n", PROD)
+	fmt.Printf("SOMA = %d\n", SOMA)
 }
