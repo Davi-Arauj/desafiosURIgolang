@@ -4,12 +4,13 @@ import "fmt"
 
 func main() {
 	
-    var a,b int
+    var a float64
+	n := 3.14159
+	var A float64
 
-	fmt.Scanf("%d", &a)
-	fmt.Scanf("%d", &b)
+	fmt.Scanf("%f", &a)
 
-	var SOMA =  a+b
+	A = (a * a) * n
 
-	fmt.Printf("SOMA = %d\n", SOMA)
+	fmt.Printf("A=%.4f\n", A)
 }
