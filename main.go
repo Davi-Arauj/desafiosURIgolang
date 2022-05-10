@@ -3,16 +3,14 @@ package main
 import "fmt"
 
 func main() {
-	
-	var numFuncionario,numHoras int64
-	var valorHora float64
+	var a,b,c,d int64
 
-	fmt.Scanf("%d",&numFuncionario)
-	fmt.Scanf("%d",&numHoras)
-	fmt.Scanf("%f",&valorHora)
+	fmt.Scanf("%d", &a)
+	fmt.Scanf("%d", &b)
+	fmt.Scanf("%d", &c)
+	fmt.Scanf("%d", &d)
 
-	salary := valorHora*float64(numHoras)
-
-	fmt.Printf("NUMBER = %d\n",numFuncionario)
-	fmt.Printf("SALARY = U$ %.2f\n",salary)
+	DIFERENCA := (a * b - c * d)
+ 
+	fmt.Printf("DIFERENCA = %d\n", DIFERENCA)
 }
