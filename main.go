@@ -3,14 +3,16 @@ package main
 import "fmt"
 
 func main() {
-	var salario,vendas float64
-	var nome string
+	
+	var numFuncionario,numHoras int64
+	var valorHora float64
 
-	fmt.Scanf("%s",&nome)
-	fmt.Scanf("%f",&salario)
-	fmt.Scanf("%f",&vendas)
+	fmt.Scanf("%d",&numFuncionario)
+	fmt.Scanf("%d",&numHoras)
+	fmt.Scanf("%f",&valorHora)
 
-	comissao := (vendas*0.15)+salario
+	salary := valorHora*float64(numHoras)
 
-	fmt.Printf("TOTAL = R$ %.2f\n",comissao)
+	fmt.Printf("NUMBER = %d\n",numFuncionario)
+	fmt.Printf("SALARY = U$ %.2f\n",salary)
 }
