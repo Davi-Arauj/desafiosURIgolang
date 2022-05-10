@@ -3,13 +3,13 @@ package main
 import "fmt"
 
 func main() {
-	var a,b float64
+	
+	var a,b int
 
-	fmt.Scanf("%f", &a)
-	fmt.Scanf("%f", &b)
-	var notaA = a*3.5
-	var notaB = b*7.5 
-	media := (notaA+notaB)/11
+	fmt.Scanf("%d", &a)
+	fmt.Scanf("%d", &b)
 
-	fmt.Printf("MEDIA = %.5f\n", media)
+	var PROD =  a*b
+
+	fmt.Printf("PROD = %d\n", PROD)
 }
