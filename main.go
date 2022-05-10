@@ -3,14 +3,12 @@ package main
 import "fmt"
 
 func main() {
-	
-    var a float64
-	n := 3.14159
-	var A float64
-
-	fmt.Scanf("%f", &a)
-
-	A = (a * a) * n
-
-	fmt.Printf("A=%.4f\n", A)
+	var a,b int
+    var x int
+ 
+    fmt.Scanf("%d", &a)
+    fmt.Scanf("%d", &b)
+    x = a + b
+     
+    fmt.Printf("X = %d\n", x)
 }
