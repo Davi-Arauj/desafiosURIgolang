@@ -5,10 +5,15 @@ import (
 )
 
 func main() {
-	var x1 int64
+	var valor int64
+	var notas = [7]int64{100, 50, 20, 10, 5, 2, 1}
+	fmt.Scanf("%d", &valor)
+	fmt.Println(valor)
 
-	fmt.Scanf("%d", &x1)
-	minutos := x1 * 2
-	fmt.Printf("%d minutos\n", minutos)
+	for _, nota := range notas {
+		qtdNotas := (valor / nota)
+		fmt.Printf("%d nota(s) de R$ %d,00\n", qtdNotas, nota)
+		valor = valor % nota
+	}
 
 }
